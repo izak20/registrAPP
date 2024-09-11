@@ -34,4 +34,21 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+/* @import "@ionic/angular/css/palettes/dark.system.css"; */
+
+:root {
+    /* Variables del modo claro */
+    --ion-background-color: #ffffff;  /* Fondo blanco */
+    --ion-text-color: #000000;        /* Texto negro */
+    --ion-item-background: #ffffff;
+  }
+  
+  /* Deshabilitar el modo oscuro aunque el sistema lo esté usando */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ion-background-color: #ffffff;
+      --ion-text-color: #000000;
+      --ion-item-background: #ffffff;
+    }
+  }
+  
